@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка плеера</title>
+    <link href="video.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/hls.min.js"></script>
+
+</head>
+
+<body>
+    <div class="video_wrapper">
+        <div class="videos">
+            <video id="video" class="video"></video> 
+            <div class="name_video">
+                <div>Название видео</div>
+            </div>
+            <div class="button_play_big"></div>
+            <div class="control_wrapper">
+                <div class="main_control">
+                    <div class="btns">
+                        <div class="play"></div>
+                        <div class="pause"></div>
+                    </div>
+                    <div class="zv_btns">
+                        <div class="sound"></div>
+                        <div class="muted"></div>
+                    </div>
+                    <div class="sl_cont">
+                        <div id="slider"></div>
+                    </div>
+                    <div class="right">
+                        <div class="zoom"></div>
+                        <div class="hd">
+                            <p>HD</p>
+                        </div>
+                        <a href="http://www.devline.ru/" target="_blank">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var per = 0;
+        var hd_poz = 1;
+        var l_poz = 1;
+        var time = 300;
+        var a_play = 1;
+    </script>
+    <script>
+         var hd_url = "https://n1.ru.rtsp.me/hlsHD/DJN3sqLx.m3u8"; //Ссылка на HD качество
+         var n_url = "https://n1.ru.rtsp.me/hls/xLqs3NJD.m3u8";
+         var buf_size = 2; //размер буфера в MB
+         var buf_lh = 1 // размер буфера в секундах
+        
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
