@@ -10,13 +10,12 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/hls.min.js"></script>
-
 </head>
 
 <body>
     <div class="video_wrapper">
         <div class="videos">
-            <video id="video" class="video"></video> 
+            <iframe id="if_video" src="video.html" frameborder="0"> </iframe>
             <div class="name_video">
                 <div>Название видео</div>
             </div>
@@ -55,10 +54,11 @@
         var a_play = 1;
     </script>
     <script>
-         var hd_url = "https://n1.ru.rtsp.me/hlsHD/DJN3sqLx.m3u8"; //Ссылка на HD качество
-         var n_url = "https://n1.ru.rtsp.me/hls/xLqs3NJD.m3u8";
-         var buf_size = 2; //размер буфера в MB
-         var buf_lh = 1 // размер буфера в секундах
+        var hd_url = "https://n1.ru.rtsp.me/hlsHD/DJN3sqLx.m3u8"; //Ссылка на HD качество
+        var n_url = "https://n1.ru.rtsp.me/hls/xLqs3NJD.m3u8";
+        var buf_size = 2; //размер буфера в MB
+        var buf_lh = 1 // размер буфера в секундах
+      
         
     </script>
     <script src="js/main.js"></script>
